@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b114a0b5.chunk.css",
+    "main.js": "/static/js/main.9278fc8a.chunk.js",
+    "main.js.map": "/static/js/main.9278fc8a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8c40394c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8c40394c.js.map",
+    "static/js/2.c5cfb03e.chunk.js": "/static/js/2.c5cfb03e.chunk.js",
+    "static/js/2.c5cfb03e.chunk.js.map": "/static/js/2.c5cfb03e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.67895150bdc0f5dcf1eee9fdb2508fe6.js": "/precache-manifest.67895150bdc0f5dcf1eee9fdb2508fe6.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b114a0b5.chunk.css.map": "/static/css/main.b114a0b5.chunk.css.map",
+    "static/js/2.c5cfb03e.chunk.js.LICENSE.txt": "/static/js/2.c5cfb03e.chunk.js.LICENSE.txt",
+    "static/media/HM400x400.png": "/static/media/HM400x400.bef7b601.png",
+    "static/media/Hong Kong.jpg": "/static/media/Hong Kong.cab3465e.jpg",
+    "static/media/London.jpg": "/static/media/London.0045fb76.jpg",
+    "static/media/NYC.jpg": "/static/media/NYC.ab9e4be1.jpg",
+    "static/media/Paris.jpg": "/static/media/Paris.0503fb21.jpg",
+    "static/media/Rome.jpg": "/static/media/Rome.9693aef5.jpg",
+    "static/media/SF.jpg": "/static/media/SF.ec63245b.jpg",
+    "static/media/Tokyo.jpg": "/static/media/Tokyo.0031371b.jpg",
+    "static/media/Vancouver.jpg": "/static/media/Vancouver.73e1093b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c40394c.js",
+    "static/js/2.c5cfb03e.chunk.js",
+    "static/css/main.b114a0b5.chunk.css",
+    "static/js/main.9278fc8a.chunk.js"
+  ]
+}
