@@ -14,7 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.authorizeRequest = void 0;
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-require('dotenv').config();
+//require('dotenv').config()
 const express_1 = __importDefault(require("express"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const cookie_parser_1 = __importDefault(require("cookie-parser"));
@@ -35,7 +35,7 @@ const mount = (app) => __awaiter(void 0, void 0, void 0, function* () {
     const db = yield database_1.connectDatabase();
     app.use(body_parser_1.default.json({ limit: "2mb" }));
     app.use(cookie_parser_1.default(process.env.SECRET));
-    app.use(compression_1.default);
+    app.use(compression_1.default());
     app.use(express_1.default.static(`${__dirname}/client`));
     app.get("/*", (_req, res) => res.sendFile(`${__dirname}/client/index.html`));
     const server = new apollo_server_express_1.ApolloServer({
@@ -45,6 +45,5 @@ const mount = (app) => __awaiter(void 0, void 0, void 0, function* () {
     });
     server.applyMiddleware({ app, path: "/api" });
     app.listen(port);
-    app.get("/", (_req, res) => res.send("Connected"));
 });
 mount(express_1.default());
