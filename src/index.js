@@ -13,6 +13,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.authorizeRequest = void 0;
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+require('dotenv').config();
 const express_1 = __importDefault(require("express"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const cookie_parser_1 = __importDefault(require("cookie-parser"));
@@ -28,6 +30,7 @@ exports.authorizeRequest = (db, req) => __awaiter(void 0, void 0, void 0, functi
     });
     return viewer;
 });
+const port = process.env.PORT || 9000;
 const mount = (app) => __awaiter(void 0, void 0, void 0, function* () {
     const db = yield database_1.connectDatabase();
     app.use(body_parser_1.default.json({ limit: "2mb" }));
@@ -41,7 +44,7 @@ const mount = (app) => __awaiter(void 0, void 0, void 0, function* () {
         context: ({ req, res }) => ({ db, req, res })
     });
     server.applyMiddleware({ app, path: "/api" });
-    app.listen(process.env.PORT);
+    app.listen(port);
     app.get("/", (_req, res) => res.send("Connected"));
 });
 mount(express_1.default());
